@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+
 @interface AppDelegate ()
 {
 }
@@ -16,6 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    MainViewController *mainView = [[MainViewController alloc] init];
+    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:mainView];
+    self.window.rootViewController = mainNav;
+    [self.window makeKeyAndVisible];
+
     // Override point for customization after application launch.
     UIApplicationShortcutItem *shortItem1 = [[UIApplicationShortcutItem alloc] initWithType:@"斋打开" localizedTitle:@"斋打开"];
     UIApplicationShortcutItem *shortItem2 = [[UIApplicationShortcutItem alloc] initWithType:@"弹框" localizedTitle:@"弹框"];
@@ -23,6 +31,10 @@
     NSLog(@"%@", shortItems);
     [[UIApplication sharedApplication] setShortcutItems:shortItems];
     return YES;
+}
+
++ (AppDelegate *)appDelegate {
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

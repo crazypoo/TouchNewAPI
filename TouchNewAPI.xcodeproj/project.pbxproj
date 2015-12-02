@@ -13,6 +13,9 @@
 		C0BE2D4E1BBA366B003CC61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE2D4C1BBA366B003CC61D /* Main.storyboard */; };
 		C0BE2D501BBA366B003CC61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BE2D4F1BBA366B003CC61D /* Assets.xcassets */; };
 		C0BE2D531BBA366B003CC61D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE2D511BBA366B003CC61D /* LaunchScreen.storyboard */; };
+		C0E6E7021C0EDE3C009938F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E6E7011C0EDE3C009938F8 /* MainViewController.m */; };
+		C0E6E7051C0EE09C009938F8 /* Test3DTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E6E7041C0EE09C009938F8 /* Test3DTouchViewController.m */; };
+		C0E6E7081C0EE342009938F8 /* PViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E6E7071C0EE342009938F8 /* PViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		C0BE2D4F1BBA366B003CC61D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0BE2D521BBA366B003CC61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BE2D541BBA366B003CC61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E6E7001C0EDE3C009938F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C0E6E7011C0EDE3C009938F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C0E6E7031C0EE09C009938F8 /* Test3DTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3DTouchViewController.h; sourceTree = "<group>"; };
+		C0E6E7041C0EE09C009938F8 /* Test3DTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3DTouchViewController.m; sourceTree = "<group>"; };
+		C0E6E7061C0EE342009938F8 /* PViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViewController.h; sourceTree = "<group>"; };
+		C0E6E7071C0EE342009938F8 /* PViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,8 @@
 			children = (
 				C0BE2D461BBA366B003CC61D /* AppDelegate.h */,
 				C0BE2D471BBA366B003CC61D /* AppDelegate.m */,
+				C0E6E7001C0EDE3C009938F8 /* MainViewController.h */,
+				C0E6E7011C0EDE3C009938F8 /* MainViewController.m */,
 				C0BE2D491BBA366B003CC61D /* ViewController.h */,
 				C0BE2D4A1BBA366B003CC61D /* ViewController.m */,
 				C0BE2D4C1BBA366B003CC61D /* Main.storyboard */,
@@ -67,6 +78,10 @@
 				C0BE2D511BBA366B003CC61D /* LaunchScreen.storyboard */,
 				C0BE2D541BBA366B003CC61D /* Info.plist */,
 				C0BE2D431BBA366B003CC61D /* Supporting Files */,
+				C0E6E7031C0EE09C009938F8 /* Test3DTouchViewController.h */,
+				C0E6E7041C0EE09C009938F8 /* Test3DTouchViewController.m */,
+				C0E6E7061C0EE342009938F8 /* PViewController.h */,
+				C0E6E7071C0EE342009938F8 /* PViewController.m */,
 			);
 			path = TouchNewAPI;
 			sourceTree = "<group>";
@@ -150,8 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BE2D4B1BBA366B003CC61D /* ViewController.m in Sources */,
+				C0E6E7081C0EE342009938F8 /* PViewController.m in Sources */,
 				C0BE2D481BBA366B003CC61D /* AppDelegate.m in Sources */,
 				C0BE2D451BBA366B003CC61D /* main.m in Sources */,
+				C0E6E7051C0EE09C009938F8 /* Test3DTouchViewController.m in Sources */,
+				C0E6E7021C0EDE3C009938F8 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +320,7 @@
 				C0BE2D591BBA366B003CC61D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
